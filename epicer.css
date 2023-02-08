@@ -36,8 +36,7 @@ b:hover {
 }
 
 @keyframes kmation {
-  0%   {transform: rotate(-5deg);}
-  50%  {transform: rotate(6deg);}
+  0%   {transform: rotate(6deg);}
   100% {transform: rotate(-5deg);}
 }
 
@@ -47,9 +46,10 @@ b:hover {
   margin-right: auto;
   width: 20%;
   animation-name: kmation;
-  animation-duration: 4s;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  animation-direction: alternate;
 }
 
 /* sidebar */
