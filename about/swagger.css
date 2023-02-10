@@ -1,10 +1,30 @@
 body {
+  background-image: url("background.png");
   background-size: 100% auto;
   background-color:#2F4F4F;
-  margin-left: 210px;
 }
 
-h1 {color: beige;}
+h1 {color: beige;
+  text-shadow:
+    -2px -2px 0 #000,
+     0   -2px 0 #000,
+     2px -2px 0 #000,
+     2px  0   0 #000,
+     1px  2px 0 #000,
+     0    2px 0 #000,
+    -2px  2px 0 #000,
+    -2px  0   0 #000;
+    font-size: 2vw;
+}
+
+.h1km {
+  animation-name: kmation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate
+}
+
 p {color: beige;}
 hr {color: beige;}
 
@@ -16,6 +36,11 @@ b:hover {
     text-decoration: none;
     background-color: #f1f1f1;
     right: -100px;
+}
+
+.outline {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 /* center shit */
@@ -34,11 +59,21 @@ b:hover {
     z-index:-1;
 }
 
+@keyframes kmation {
+  0%   {transform: rotate(6deg);}
+  100% {transform: rotate(-5deg);}
+}
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 20%;
+  animation-name: kmation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
 }
 
 /* sidebar */
@@ -52,14 +87,14 @@ b:hover {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 1vh;
 }
 
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 1vh 8px 3vh 1vw;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 2vw;
   font-family: "Bahnschrift", "Helvetica";
   color: #818181;
   display: block;
@@ -79,5 +114,16 @@ b:hover {
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 2vw;}
+}
+
+@media screen and (max-height: 800px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 2vw;}
+}
+
+div.content {
+  margin-left: 50%;
+  padding: 1px 16px;
+  height: 1000px;
 }
