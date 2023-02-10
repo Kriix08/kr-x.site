@@ -5,7 +5,26 @@ body {
   margin-left: 210px;
 }
 
-h1 {color: beige;}
+h1 {color: beige;
+  text-shadow:
+    -2px -2px 0 #000,
+     0   -2px 0 #000,
+     2px -2px 0 #000,
+     2px  0   0 #000,
+     1px  2px 0 #000,
+     0    2px 0 #000,
+    -2px  2px 0 #000,
+    -2px  0   0 #000;
+  margin-left: 50%}
+
+.h1km {
+  animation-name: kmation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate
+}
+
 p {color: beige;}
 hr {color: beige;}
 
@@ -17,6 +36,11 @@ b:hover {
     text-decoration: none;
     background-color: #f1f1f1;
     right: -100px;
+}
+
+.outline {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 /* center shit */
