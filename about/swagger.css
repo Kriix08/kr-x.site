@@ -61,15 +61,15 @@ b:hover {
 
 .boxcenter {
     display: flex;
-    justify-content: bottom;
-    align-items: bottom;
+    justify-content: center;
+    align-items: center;
     opacity:1;
     position:fixed;
     width:100%;
     height:100%;
     top:0px;
     left:0px;
-    margin-bottom:36.25%;
+    margin-bottom: 36.25%;
     z-index:-1;
 }
 
@@ -78,7 +78,7 @@ b:hover {
   100% {transform: rotate(-5deg);}
 }
 
-.bottom {
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
