@@ -78,11 +78,11 @@ b:hover {
   100% {transform: rotate(-5deg);}
 }
 
-.center {
+.bottom {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 20%;
+  width: 50%;
   animation-name: kmation;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
