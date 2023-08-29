@@ -1,5 +1,5 @@
 body {
-  background-image: url("../img/background.png");
+  background-image: url("img/background.png");
   background-size: 100% auto;
   background-color:#2F4F4F;
 }
@@ -87,7 +87,7 @@ b:hover {
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 1vh;
+  padding-top: 0.5vw;
 }
 
 
@@ -112,15 +112,7 @@ b:hover {
   padding: 0px 10px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 2vw;}
-}
 
-@media screen and (max-height: 800px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 2vw;}
-}
 
 div.content {
   margin-left: 50%;
