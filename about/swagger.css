@@ -61,15 +61,15 @@ b:hover {
 
 .boxcenter {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: bottom;
+    align-items: bottom;
     opacity:1;
     position:fixed;
     width:100%;
     height:100%;
     top:0px;
     left:0px;
-    margin-left: 36.25%;
+    margin-bottom:36.25%;
     z-index:-1;
 }
 
@@ -82,7 +82,7 @@ b:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 20%;
   animation-name: kmation;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
