@@ -1,4 +1,5 @@
 # kr-x.site
+[the actual site xd](https://kriix08.github.io/kr-x.site/)
 it be my website, few things you should know:
 
 - it's ass
